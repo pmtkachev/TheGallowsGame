@@ -49,4 +49,6 @@ GALLOWS = ['''
 ||   
 ''']
 
-WORDS = ['хлеб', 'дом', 'ответ', 'гном', 'человек']
+with open('word_list.txt', encoding='UTF-8') as file:
+    words = file.read()
+    WORDS = words.split()
